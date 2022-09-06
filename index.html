@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Compound Interest Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Investment Compound Interest Calculator</h1>
+        <form class="form">
+            <label for="rec-inv-amt">Monthly Contributions:</label>
+            <input required id="rec-inv-amt" type="number" />
+            <label for="rate">Interest Rate:</label>
+            <input required id="rate" type="number" />
+            <label for="years">Years Invested:</label>
+            <input required id="years" type="number" />
+    
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+    
+        <table class="table">
+            <thead class="thead hidden">
+                <tr>
+                    <th>Year</th>
+                    <th>Investment <span class="mth-cont"></span></th>
+                  </tr>
+            </thead>
+            <tbody class="tbody">
+                
+            </tbody>
+        </table>
+    </div>
+    <script src="/js/compound.js"></script>
+</body>
+</html>
